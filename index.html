@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="choices">
-        <button class="choice">Rock</button>
-        <button class="choice">Paper</button
-        ><button class="choice">Scissor</button>
+        <button data-choice="Rock" class="choice">Rock</button>
+        <button data-choice="Paper" class="choice">Paper</button
+        ><button data-choice="Scissor" class="choice">Scissor</button>
       </div>
       <div class="result">
-        <div>You &nbsp;<span>0</span></div>
-        <div>Computer &nbsp;<span>0</span></div>
+        <div>You &nbsp;<span data-user-score>0</span></div>
+        <br />
+        <div>Computer &nbsp;<span data-computer-score>0</span></div>
       </div>
     </div>
   </body>
